@@ -11,6 +11,8 @@
     "forceConsistentCasingInFileNames": true,
     "outDir": "./dist",
     "rootDir": "./src",
+    "types": ["@testing-library/jest-dom", "types/react"],
+
 
     // ES6+ Features
     "experimentalDecorators": true,

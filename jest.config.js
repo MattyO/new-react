@@ -5,7 +5,7 @@ export default {
     '^(\\.{1,2}/.*)\\.js$': '$1'
   },
   transform: {
-    '^.+\\.(ts|tsx)?$': [
+    '^.+\\.tsx?$': [
       'ts-jest',
       {
         useESM: true,
@@ -13,5 +13,6 @@ export default {
     ],
   },
   testEnvironment: 'node',
+  setupFilesAfterEnv: ["jest-extended/all"],
   extensionsToTreatAsEsm: ['.ts'],
 };
